@@ -1,358 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rehan Nizam & Huram Naaz | Wedding Invitation</title>
+<meta charset="UTF-8">
 
-    <style>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-        * {
-            box-sizing: border-box;
-        }
+<title>Rehan Nizam & Huram Naaz</title>
 
-        html {
-            scroll-behavior: smooth;
-        }
+<link rel="stylesheet" href="style.css">
 
-        body {
-            margin: 0;
-            background: #f5efe3;
-            color: #24352c;
-            font-family: Georgia, "Times New Roman", serif;
-        }
-
-        /* =========================
-           OPENING SCREEN
-        ========================= */
-
-        .cover {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px 20px;
-
-            background:
-                radial-gradient(circle at top, rgba(190,155,80,0.18), transparent 35%),
-                linear-gradient(135deg, #f8f1e4, #eee3d0);
-        }
-
-        .cover-box {
-            width: 100%;
-            max-width: 550px;
-            padding: 55px 25px;
-
-            border: 1px solid rgba(166,130,55,0.55);
-
-            box-shadow:
-                0 20px 60px rgba(44,45,31,0.15);
-
-            background: rgba(255,255,255,0.25);
-        }
-
-        .bismillah {
-            font-size: 28px;
-            margin-bottom: 25px;
-            color: #9a752d;
-        }
-
-        .small-text {
-            letter-spacing: 3px;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #68776c;
-        }
-
-        .nikah-title {
-            font-size: 18px;
-            letter-spacing: 5px;
-            margin: 25px 0;
-            color: #9a752d;
-        }
-
-        .names {
-            font-size: 42px;
-            line-height: 1.4;
-            color: #20372c;
-        }
-
-        .and {
-            display: block;
-            font-size: 25px;
-            color: #a58238;
-            margin: 5px 0;
-        }
-
-        .date {
-            margin-top: 25px;
-            font-size: 17px;
-            letter-spacing: 2px;
-        }
-
-        .open-btn {
-            margin-top: 35px;
-            padding: 16px 35px;
-
-            border: 1px solid #a58238;
-            background: #244336;
-            color: white;
-
-            font-size: 13px;
-            letter-spacing: 2px;
-
-            cursor: pointer;
-
-            transition: 0.3s;
-        }
-
-        .open-btn:hover {
-            background: #a58238;
-        }
-
-        /* =========================
-           INVITATION
-        ========================= */
-
-        #invitation {
-            display: none;
-        }
-
-        section {
-            padding: 90px 20px;
-            text-align: center;
-        }
-
-        .section-inner {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .section-label {
-            font-size: 12px;
-            letter-spacing: 4px;
-            color: #a58238;
-            text-transform: uppercase;
-        }
-
-        h2 {
-            font-size: 36px;
-            font-weight: normal;
-            color: #243d31;
-        }
-
-        .divider {
-            width: 70px;
-            height: 1px;
-            background: #b0924c;
-            margin: 25px auto;
-        }
-
-        /* =========================
-           INTRO
-        ========================= */
-
-        .intro {
-            min-height: 90vh;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            background:
-                radial-gradient(circle at center, rgba(180,145,75,0.15), transparent 55%);
-        }
-
-        .intro-text {
-            max-width: 650px;
-            margin: auto;
-            line-height: 1.9;
-            font-size: 18px;
-        }
-
-        /* =========================
-           QURAN SECTION
-        ========================= */
-
-        .quran {
-            background: #233d31;
-            color: #f8f1e4;
-        }
-
-        .quran .section-label {
-            color: #d2b66b;
-        }
-
-        .arabic {
-            font-size: 30px;
-            line-height: 2;
-            margin: 30px auto;
-            max-width: 750px;
-        }
-
-        .translation {
-            font-size: 16px;
-            line-height: 1.8;
-            max-width: 650px;
-            margin: auto;
-            color: #e9dfca;
-        }
-
-        /* =========================
-           EVENTS
-        ========================= */
-
-        .events {
-            background: #f8f2e7;
-        }
-
-        .event-card {
-            margin: 25px auto;
-            padding: 30px 20px;
-            max-width: 600px;
-
-            background: rgba(255,255,255,0.6);
-
-            border: 1px solid rgba(166,130,55,0.35);
-
-            box-shadow: 0 12px 35px rgba(44,45,31,0.08);
-        }
-
-        .event-card h3 {
-            color: #8e6d2b;
-            letter-spacing: 3px;
-            font-size: 18px;
-        }
-
-        .event-date {
-            font-size: 20px;
-            color: #253b30;
-        }
-
-        /* =========================
-           COUNTDOWN
-        ========================= */
-
-        .countdown {
-            background: #ede2ce;
-        }
-
-        .timer {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 35px;
-        }
-
-        .time-box {
-            width: 75px;
-            padding: 18px 5px;
-
-            background: #244336;
-            color: white;
-        }
-
-        .time-number {
-            font-size: 25px;
-            display: block;
-        }
-
-        .time-label {
-            font-size: 9px;
-            letter-spacing: 1px;
-        }
-
-        /* =========================
-           VENUE
-        ========================= */
-
-        .venue {
-            background: #f8f1e4;
-        }
-
-        .map-btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 28px;
-
-            text-decoration: none;
-
-            background: #a58238;
-            color: white;
-
-            letter-spacing: 2px;
-            font-size: 12px;
-        }
-
-        /* =========================
-           RSVP
-        ========================= */
-
-        .rsvp {
-            background: #233d31;
-            color: white;
-        }
-
-        .rsvp h2 {
-            color: white;
-        }
-
-        .rsvp-btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 30px;
-
-            text-decoration: none;
-
-            background: #d0ad5d;
-            color: #20372c;
-
-            font-weight: bold;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            padding: 60px 20px;
-            text-align: center;
-            background: #172c23;
-            color: #e9dfca;
-        }
-
-        footer .names {
-            color: #d4b66a;
-            font-size: 28px;
-        }
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media(max-width:600px) {
-
-            .names {
-                font-size: 34px;
-            }
-
-            .arabic {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 30px;
-            }
-
-            section {
-                padding: 70px 18px;
-            }
-        }
-
-    </style>
 </head>
 
 
@@ -360,41 +19,55 @@
 
 
 <!-- =========================
-     COVER
+     OPENING SCREEN
 ========================= -->
 
-<div class="cover" id="cover">
+<div id="cover" class="cover">
 
-    <div class="cover-box">
+    <div class="cover-card">
 
         <div class="bismillah">
             بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
         </div>
 
-        <div class="small-text">
-            With the blessings of Allah
-        </div>
+        <p class="invited">
+            WITH THE BLESSINGS OF ALLAH
+        </p>
 
-        <div class="nikah-title">
+        <p class="nikah">
             NIKAH CEREMONY
+        </p>
+
+
+        <div class="couple-names">
+
+            <span>Rehan Nizam</span>
+
+            <small>&</small>
+
+            <span>Huram Naaz</span>
+
         </div>
 
-        <div class="names">
 
-            Rehan Nizam
+        <div class="gold-line"></div>
 
-            <span class="and">&</span>
 
-            Huram Naaz
+        <p class="wedding-date">
+            20 DECEMBER 2026
+        </p>
 
-        </div>
+        <p class="wedding-time">
+            7:00 PM · THE GRAND PALACE · LUCKNOW
+        </p>
 
-        <div class="date">
-            20 DECEMBER 2026 · 7:00 PM
-        </div>
 
-        <button class="open-btn" onclick="openInvitation()">
-            OPEN INVITATION
+        <button
+            class="open-button"
+            onclick="openInvitation()">
+
+            ✦ OPEN INVITATION ✦
+
         </button>
 
     </div>
@@ -404,42 +77,47 @@
 
 
 <!-- =========================
-     INVITATION
+     MAIN INVITATION
 ========================= -->
 
-<div id="invitation">
+<main id="invitation">
 
 
     <!-- INTRO -->
 
-    <section class="intro">
+    <section class="hero">
 
-        <div class="section-inner">
+        <div class="section-container">
 
             <div class="bismillah">
                 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
             </div>
 
-            <div class="section-label">
-                A Blessed Beginning
-            </div>
+            <p class="section-label">
+                A BLESSED BEGINNING
+            </p>
 
-            <h2>
+
+            <h1 class="main-names">
+
                 Rehan Nizam
-                <br>
-                &
-                <br>
-                Huram Naaz
-            </h2>
 
-            <div class="divider"></div>
+                <span>&</span>
+
+                Huram Naaz
+
+            </h1>
+
+
+            <div class="gold-line"></div>
+
 
             <p class="intro-text">
 
                 With the blessings of Allah and the love
-                of our families, we joyfully invite you
-                to celebrate the beginning of our new journey
-                together.
+                of our families, we invite you to join us
+                as we begin a beautiful new chapter
+                of our lives together.
 
             </p>
 
@@ -453,21 +131,24 @@
 
     <section class="quran">
 
-        <div class="section-inner">
+        <div class="section-container">
 
-            <div class="section-label">
-                From The Holy Quran
-            </div>
+            <p class="section-label">
+                FROM THE HOLY QURAN
+            </p>
+
 
             <div class="arabic">
 
-                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ
-                أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا
-                إِلَيْهَا
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم
+                مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+                لِّتَسْكُنُوا إِلَيْهَا
 
             </div>
 
-            <div class="divider"></div>
+
+            <div class="gold-line"></div>
+
 
             <p class="translation">
 
@@ -487,53 +168,59 @@
 
 
 
-    <!-- WEDDING DETAILS -->
+    <!-- WEDDING EVENTS -->
 
     <section class="events">
 
-        <div class="section-inner">
+        <div class="section-container">
 
-            <div class="section-label">
-                Save The Date
-            </div>
+            <p class="section-label">
+                SAVE THE DATE
+            </p>
 
             <h2>
-                Our Nikah
+                Our Special Day
             </h2>
-
-            <div class="divider"></div>
 
 
             <div class="event-card">
+
+                <div class="event-icon">
+                    ☾
+                </div>
 
                 <h3>
                     NIKAH
                 </h3>
 
-                <p class="event-date">
+                <p>
                     20 December 2026
                 </p>
 
-                <p>
-                    Sunday · 7:00 PM
-                </p>
+                <span>
+                    7:00 PM
+                </span>
 
             </div>
 
 
             <div class="event-card">
 
+                <div class="event-icon">
+                    ✦
+                </div>
+
                 <h3>
                     VENUE
                 </h3>
 
-                <p class="event-date">
+                <p>
                     The Grand Palace
                 </p>
 
-                <p>
-                    Lucknow
-                </p>
+                <span>
+                    Lucknow, Uttar Pradesh
+                </span>
 
             </div>
 
@@ -547,36 +234,37 @@
 
     <section class="countdown">
 
-        <div class="section-inner">
+        <div class="section-container">
 
-            <div class="section-label">
-                Counting Down
-            </div>
+            <p class="section-label">
+                COUNTING DOWN TO OUR NIKAH
+            </p>
 
             <h2>
-                Until Our Special Day
+                The Big Day
             </h2>
+
 
             <div class="timer">
 
                 <div class="time-box">
-                    <span class="time-number" id="days">0</span>
-                    <span class="time-label">DAYS</span>
+                    <strong id="days">00</strong>
+                    <small>DAYS</small>
                 </div>
 
                 <div class="time-box">
-                    <span class="time-number" id="hours">0</span>
-                    <span class="time-label">HOURS</span>
+                    <strong id="hours">00</strong>
+                    <small>HOURS</small>
                 </div>
 
                 <div class="time-box">
-                    <span class="time-number" id="minutes">0</span>
-                    <span class="time-label">MINUTES</span>
+                    <strong id="minutes">00</strong>
+                    <small>MINUTES</small>
                 </div>
 
                 <div class="time-box">
-                    <span class="time-number" id="seconds">0</span>
-                    <span class="time-label">SECONDS</span>
+                    <strong id="seconds">00</strong>
+                    <small>SECONDS</small>
                 </div>
 
             </div>
@@ -591,28 +279,30 @@
 
     <section class="venue">
 
-        <div class="section-inner">
+        <div class="section-container">
 
-            <div class="section-label">
-                Join Us
-            </div>
+            <p class="section-label">
+                JOIN US
+            </p>
 
             <h2>
                 The Grand Palace
             </h2>
 
-            <div class="divider"></div>
+            <div class="gold-line"></div>
 
-            <p>
+            <p class="venue-text">
                 Lucknow, Uttar Pradesh
             </p>
 
+
             <a
-                class="map-btn"
                 href="https://www.google.com/maps/search/?api=1&query=The+Grand+Palace+Lucknow"
                 target="_blank"
-            >
-                GET DIRECTIONS
+                class="gold-button">
+
+                📍 GET DIRECTIONS
+
             </a>
 
         </div>
@@ -621,31 +311,104 @@
 
 
 
-    <!-- RSVP -->
+    <!-- =========================
+         SCRATCH CARD
+    ========================= -->
+
+    <section class="scratch-section">
+
+        <div class="section-container">
+
+            <p class="section-label">
+                A LITTLE SURPRISE
+            </p>
+
+            <h2>
+                Scratch & Reveal
+            </h2>
+
+            <p class="scratch-text">
+                Scratch the card below
+                to reveal a special message.
+            </p>
+
+
+            <div class="scratch-card">
+
+                <div class="scratch-message">
+
+                    <span>🤍</span>
+
+                    <strong>
+                        Your presence and duas
+                        are our greatest gift.
+                    </strong>
+
+                    <small>
+                        JazakAllah Khair
+                    </small>
+
+                </div>
+
+
+                <canvas
+                    id="scratchCanvas">
+                </canvas>
+
+            </div>
+
+
+            <p class="scratch-hint">
+                ✦ Use your finger to scratch ✦
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RSVP
+    ========================= -->
 
     <section class="rsvp">
 
-        <div class="section-inner">
+        <div class="section-container">
 
-            <div class="section-label">
-                We Would Love To Have You
-            </div>
+            <p class="section-label">
+                YOUR PRESENCE MATTERS
+            </p>
 
             <h2>
                 Will You Join Us?
             </h2>
 
-            <p>
-                Your presence and duas will make
-                our special day even more meaningful.
+            <p class="rsvp-text">
+
+                We would be honoured to celebrate
+                this blessed occasion with you.
+
             </p>
 
+
             <a
-                class="rsvp-btn"
                 href="https://wa.me/?text=Assalamu%20Alaikum%2C%20I%20would%20love%20to%20attend%20the%20Nikah%20of%20Rehan%20Nizam%20%26%20Huram%20Naaz."
                 target="_blank"
-            >
-                YES, I'LL BE THERE ❤️
+                class="rsvp-button">
+
+                ❤️ YES, I'LL BE THERE
+
+            </a>
+
+
+            <a
+                href="https://wa.me/?text=Assalamu%20Alaikum%2C%20sending%20my%20duas%20and%20best%20wishes%20to%20Rehan%20Nizam%20%26%20Huram%20Naaz."
+                target="_blank"
+                class="dua-button">
+
+                🤲 SEND MY DUAS
+
             </a>
 
         </div>
@@ -658,109 +421,33 @@
 
     <footer>
 
-        <div class="names">
-            Rehan Nizam & Huram Naaz
+        <div class="bismillah">
+            بِسْمِ اللَّهِ
         </div>
+
+        <h3>
+            Rehan Nizam
+            <span>&</span>
+            Huram Naaz
+        </h3>
 
         <p>
             20 · 12 · 2026
         </p>
 
         <p>
-            May Allah bless this union with
-            love, mercy and barakah.
+            May Allah bless our union
+            with love, mercy and barakah.
         </p>
-
-        <div class="bismillah">
-            🤍
-        </div>
 
     </footer>
 
 
-</div>
+</main>
 
 
-
-<script>
-
-    /* OPEN INVITATION */
-
-    function openInvitation() {
-
-        document.getElementById("cover").style.display = "none";
-
-        document.getElementById("invitation").style.display = "block";
-
-        window.scrollTo(0, 0);
-
-    }
-
-
-    /* COUNTDOWN */
-
-    const weddingDate =
-        new Date("December 20, 2026 19:00:00").getTime();
-
-
-    function updateCountdown() {
-
-        const now = new Date().getTime();
-
-        const difference = weddingDate - now;
-
-
-        if (difference <= 0) {
-
-            document.getElementById("days").innerText = "0";
-            document.getElementById("hours").innerText = "0";
-            document.getElementById("minutes").innerText = "0";
-            document.getElementById("seconds").innerText = "0";
-
-            return;
-
-        }
-
-
-        const days =
-            Math.floor(difference / (1000 * 60 * 60 * 24));
-
-        const hours =
-            Math.floor(
-                (difference % (1000 * 60 * 60 * 24))
-                / (1000 * 60 * 60)
-            );
-
-        const minutes =
-            Math.floor(
-                (difference % (1000 * 60 * 60))
-                / (1000 * 60)
-            );
-
-        const seconds =
-            Math.floor(
-                (difference % (1000 * 60))
-                / 1000
-            );
-
-
-        document.getElementById("days").innerText = days;
-
-        document.getElementById("hours").innerText = hours;
-
-        document.getElementById("minutes").innerText = minutes;
-
-        document.getElementById("seconds").innerText = seconds;
-
-    }
-
-
-    updateCountdown();
-
-    setInterval(updateCountdown, 1000);
-
-</script>
-
+<script src="script.js"></script>
 
 </body>
+
 </html>

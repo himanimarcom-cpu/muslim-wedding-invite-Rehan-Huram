@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    background: #f5eddf;
+
+    color: #243b2e;
+
+    font-family:
+        'Cormorant Garamond',
+        Georgia,
+        serif;
+}
+
+
+/* =========================
+   COVER
+========================= */
+
+.cover {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(190,155,80,.20),
+            transparent 45%
+        ),
+
+        linear-gradient(
+            135deg,
+            #faf5eb,
+            #e9dcc3
+        );
+}
+
+
+.cover-card {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 560px;
+
+    min-height: 680px;
+
+    padding: 60px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 1px solid #b79651;
+
+    box-shadow:
+        0 30px 80px
+        rgba(34,52,42,.18);
+
+    background:
+        rgba(255,255,255,.28);
+}
+
+
+/* Decorative corners */
+
+.cover-card::before {
+
+    content: "✦";
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 20px;
+
+    color: #b79651;
+
+    font-size: 25px;
+}
+
+
+.cover-card::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 18px;
+
+    color: #b79651;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   ARABIC
+========================= */
+
+.bismillah {
+
+    font-family: 'Amiri', serif;
+
+    font-size: 30px;
+
+    color: #a47d35;
+
+    margin-bottom: 22px;
+}
+
+
+.arabic {
+
+    font-family: 'Amiri', serif;
+
+    font-size: 32px;
+
+    line-height: 2.2;
+
+    margin: 35px auto;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.invited {
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #66756b;
+}
+
+
+.nikah {
+
+    margin: 25px 0;
+
+    font-size: 14px;
+
+    letter-spacing: 6px;
+
+    color: #9d7833;
+}
+
+
+/* =========================
+   STYLISH NAMES
+========================= */
+
+.couple-names {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0;
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 65px;
+
+    line-height: 1.15;
+
+    color: #1f3b2d;
+
+    text-shadow:
+        1px 1px 0 rgba(166,130,55,.2);
+}
+
+
+.couple-names small {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 30px;
+
+    color: #b18a43;
+
+    margin: 5px 0;
+}
+
+
+/* Main names */
+
+.main-names {
+
+    font-family:
+        'Great Vibes',
+        cursive;
+
+    font-size: 70px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    color: #1e392c;
+}
+
+
+.main-names span {
+
+    display: block;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 35px;
+
+    color: #b18a43;
+
+    margin: 5px;
+}
+
+
+/* =========================
+   GOLD LINE
+========================= */
+
+.gold-line {
+
+    width: 90px;
+
+    height: 1px;
+
+    margin: 25px auto;
+
+    background: #b79651;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.wedding-date {
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    letter-spacing: 3px;
+}
+
+
+.wedding-time {
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    color: #66756b;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.open-button {
+
+    margin-top: 40px;
+
+    padding: 17px 35px;
+
+    background: #213d30;
+
+    color: white;
+
+    border: 1px solid #c1a05a;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    letter-spacing: 3px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+
+.open-button:hover {
+
+    background: #b18a43;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,.18);
+}
+
+
+/* =========================
+   MAIN INVITATION
+========================= */
+
+#invitation {
+
+    display: none;
+}
+
+
+section {
+
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+
+.section-container {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.section-label {
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #a17c38;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(183,146,70,.12),
+            transparent 55%
+        );
+}
+
+
+.intro-text {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+
+h2 {
+
+    font-size: 50px;
+
+    font-weight: 500;
+
+    color: #20382c;
+}
+
+
+/* =========================
+   QURAN
+========================= */
+
+.quran {
+
+    background: #203d30;
+
+    color: #f5eddf;
+}
+
+
+.quran .section-label {
+
+    color: #d7bb72;
+}
+
+
+.translation {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #e9dec7;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+.events {
+
+    background: #f8f1e5;
+}
+
+
+.event-card {
+
+    max-width: 620px;
+
+    margin: 25px auto;
+
+    padding: 35px 20px;
+
+    border:
+
+        1px solid
+
+        rgba(166,130,55,.4);
+
+    background:
+        rgba(255,255,255,.5);
+
+    box-shadow:
+
+        0 15px 40px
+
+        rgba(30,45,35,.08);
+
+    transition: .35s;
+}
+
+
+.event-card:hover {
+
+    transform:
+        translateY(-6px);
+}
+
+
+.event-icon {
+
+    font-size: 25px;
+
+    color: #ad8740;
+
+    margin-bottom: 15px;
+}
+
+
+.event-card h3 {
+
+    color: #9d7833;
+
+    letter-spacing: 4px;
+
+    font-size: 18px;
+}
+
+
+.event-card p {
+
+    font-size: 24px;
+
+    margin: 10px;
+}
+
+
+.event-card span {
+
+    color: #66756b;
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown {
+
+    background: #e8dcc5;
+}
+
+
+.timer {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 40px;
+}
+
+
+.time-box {
+
+    width: 90px;
+
+    padding: 20px 5px;
+
+    background: #203d30;
+
+    color: white;
+
+    border: 1px solid #b79651;
+}
+
+
+.time-box strong {
+
+    display: block;
+
+    font-size: 30px;
+}
+
+
+.time-box small {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #d7bb72;
+}
+
+
+/* =========================
+   VENUE
+========================= */
+
+.venue {
+
+    background: #f8f1e5;
+}
+
+
+.venue-text {
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.gold-button {
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #203d30;
+
+    border: 1px solid #b79651;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SCRATCH CARD
+========================= */
+
+.scratch-section {
+
+    background: #eadfc9;
+}
+
+
+.scratch-text {
+
+    font-size: 18px;
+
+    color: #68766b;
+}
+
+
+.scratch-card {
+
+    position: relative;
+
+    width: 310px;
+
+    height: 190px;
+
+    margin: 40px auto 15px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 45px
+        rgba(30,45,35,.18);
+
+    background: #203d30;
+}
+
+
+.scratch-message {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: #f8f1e5;
+}
+
+
+.scratch-message span {
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.scratch-message strong {
+
+    font-size: 19px;
+
+    line-height: 1.4;
+}
+
+
+.scratch-message small {
+
+    margin-top: 12px;
+
+    color: #d5b76c;
+}
+
+
+#scratchCanvas {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    cursor: pointer;
+}
+
+
+.scratch-hint {
+
+    color: #96712e;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp {
+
+    background: #203d30;
+
+    color: #f5eddf;
+}
+
+
+.rsvp h2 {
+
+    color: #f5eddf;
+}
+
+
+.rsvp-text {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+
+.rsvp-button,
+.dua-button {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 18px auto;
+
+    padding: 16px 30px;
+
+    text-decoration: none;
+
+    letter-spacing: 2px;
+}
+
+
+.rsvp-button {
+
+    background: #d1b266;
+
+    color: #20382c;
+}
+
+
+.dua-button {
+
+    color: #f5eddf;
+
+    border: 1px solid #b79651;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #14291f;
+
+    color: #e8dcc5;
+}
+
+
+footer h3 {
+
+    font-family:
+        'Great Vibes',
+        cursive;
+
+    font-size: 45px;
+
+    font-weight: normal;
+
+    color: #d4b56b;
+}
+
+
+footer h3 span {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px) {
+
+    .cover-card {
+
+        min-height: 620px;
+
+    }
+
+
+    .couple-names {
+
+        font-size: 50px;
+
+    }
+
+
+    .main-names {
+
+        font-size: 52px;
+
+    }
+
+
+    h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .arabic {
+
+        font-size: 25px;
+
+    }
+
+
+    section {
+
+        padding: 75px 18px;
+
+    }
+
+
+    .scratch-card {
+
+        width: 290px;
+
+        height: 180px;
+
+    }
+
+}
